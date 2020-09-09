@@ -6,7 +6,7 @@ spring:
     username: postgres
     password: zhang123
 server:
-  port: 8083
+  port: 0
 mybatis-plus:
   type-aliases-package: com.example.pub.entity
   configuration:
