@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan("com.example.pub.mapper")
 public class MybatisPlusConfig {
     @Bean
-    public MybatisPlusInterceptor interceptor () {
+    public MybatisPlusInterceptor interceptor() {
         MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();
         mybatisPlusInterceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.POSTGRE_SQL));
         return mybatisPlusInterceptor;
